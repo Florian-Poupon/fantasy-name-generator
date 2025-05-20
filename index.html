@@ -4,7 +4,40 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Fantasy Name Generator</title>
-    <script src="script.js"></script>
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="style.css" />
   </head>
-  <body></body>
+  <body>
+    <main class="main background">
+      <!-- Générateur -->
+      <div class="generator">
+        <h1>Générateur de nom fantasy</h1>
+        <!-- Races -->
+        <div classe="choixRace">
+          <h2>Choisissez la race de votre personnage</h2>
+          <div class="raceBtn">
+            <button>Humain</button>
+            <button>Elfe</button>
+            <button>Nain</button>
+            <button>Gnome</button>
+            <button>Orc</button>
+          </div>
+        </div>
+        <!-- Genres -->
+        <div class="choixSexe">
+          <h2>Choisissez le sexe de votre personnage</h2>
+          <div class="sexeBtn">
+            <button>Masculin</button>
+            <button>Féminin</button>
+          </div>
+        </div>
+        <hr />
+        <div class="generateBtn">
+          <button>Générez votre nom</button>
+        </div>
+        <div class="yourName"></div>
+      </div>
+      <!-- Fin du Générateur -->
+    </main>
+  </body>
 </html>

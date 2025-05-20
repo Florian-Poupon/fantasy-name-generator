@@ -120,5 +120,7 @@ function generateName() {
   return nom;
 }
 
-const monNom = generateName();
-console.log(monNom);
+// const monNom = generateName();
+// console.log(monNom);
+
+//clic race
