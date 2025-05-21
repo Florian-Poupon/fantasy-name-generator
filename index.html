@@ -4,11 +4,13 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Fantasy Name Generator</title>
-    <script src="script.js" defer></script>
+    <script src="script/config.js" defer></script>
+    <script src="script/script.js" defer></script>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <main class="main background">
+    <div class="background" id="background"></div>
+    <main class="main">
       <!-- Générateur -->
       <div class="generator">
         <h1>Générateur de nom fantasy</h1>
@@ -16,26 +18,28 @@
         <div classe="choixRace">
           <h2>Choisissez la race de votre personnage</h2>
           <div class="raceBtn">
-            <button>Humain</button>
-            <button>Elfe</button>
-            <button>Nain</button>
-            <button>Gnome</button>
-            <button>Orc</button>
+            <button id="humain" data-race="humain">Humain</button>
+            <button id="elfe" data-race="elfe">Elfe</button>
+            <button id="nain" data-race="nain">Nain</button>
+            <button id="gnome" data-race="gnome">Gnome</button>
+            <button id="orc" data-race="orc">Orc</button>
           </div>
         </div>
         <!-- Genres -->
-        <div class="choixSexe">
-          <h2>Choisissez le sexe de votre personnage</h2>
-          <div class="sexeBtn">
-            <button>Masculin</button>
-            <button>Féminin</button>
+        <div class="choixgenre">
+          <h2>Choisissez le genre de votre personnage</h2>
+          <div class="genreBtn">
+            <button id="masculin" data-genre="masculin">Masculin</button>
+            <button id="feminin" data-genre="feminin">Féminin</button>
           </div>
         </div>
         <hr />
         <div class="generateBtn">
           <button>Générez votre nom</button>
         </div>
-        <div class="yourName"></div>
+        <div class="yourName">
+          <p></p>
+        </div>
       </div>
       <!-- Fin du Générateur -->
     </main>
