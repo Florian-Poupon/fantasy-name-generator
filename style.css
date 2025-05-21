@@ -6,20 +6,32 @@
   font-size: clamp(12px 20px 30px);
   text-align: center;
 }
+body {
+  background-color: #3f3b2e;
+}
 
-.main {
+.background {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  background-image: url("images/background/background-base.png");
+  background-position: center;
+  background-size: cover;
+  transition: all 0.1s;
+  opacity: 1;
+}
+
+.background.fade-out {
+  opacity: 0;
+}
+
+main {
+  position: relative;
   height: 100vh;
   width: 100vw;
   display: flex;
   justify-content: center;
   align-items: center;
-}
-
-.background {
-  background-color: #3f3b2e;
-  background-image: url("images/background/background-humain.png");
-  background-position: center;
-  background-size: cover;
 }
 
 .generator {
@@ -39,7 +51,7 @@
 }
 
 .choixRace,
-.choixSexe,
+.choixgenre,
 .generateBtn {
   padding: 3rem;
   justify-content: center;
@@ -59,18 +71,22 @@ h2 {
   margin-bottom: 2rem;
 }
 
+.yourName {
+  font-size: 3rem;
+}
+
 /* Elements */
 hr {
   width: 100%;
   height: 0.09rem;
-  background-color: #827859;
+  background-color: #0000007e;
   border: none;
 }
 
 button {
-  background-color: #4d3e0c;
-  color: white;
-  border: none;
+  background-color: rgba(0, 0, 0, 0);
+  color: rgb(0, 0, 0);
+  border: rgb(0, 0, 0) solid 0.2rem;
   padding: 1rem 2rem;
   border-radius: 0.2rem;
   cursor: pointer;
@@ -78,10 +94,19 @@ button {
 }
 button:hover {
   background-color: #552a03;
+  color: bisque;
+  border: #552a03 solid 0.2rem;
+}
+
+.raceBtn button.active,
+.genreBtn button.active {
+  background-color: #552a03;
+  color: bisque;
+  border: #552a03 solid 0.2rem;
 }
 
 .raceBtn,
-.sexeBtn {
+.genreBtn {
   display: flex;
   flex-wrap: wrap;
   gap: 0.5rem;
