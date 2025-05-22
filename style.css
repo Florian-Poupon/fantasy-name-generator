@@ -11,6 +11,7 @@
 
 body {
   background-color: #3f3b2e;
+  overflow-x: hidden;
 }
 
 .background {
@@ -32,17 +33,17 @@ body {
 }
 
 main {
-  min-height: 100vh;
+  height: 100vh;
   width: 100vw;
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 2rem; /* important pour que le contenu ne touche pas le bord */
+  padding: 2rem;
   box-sizing: border-box;
 }
 
 .parchment {
-  background: url("/images/parchment-texture.png");
+  background: url("images/parchment-texture.png");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
@@ -58,6 +59,9 @@ main {
   align-content: center;
   justify-content: center;
   padding: 10%;
+  max-width: 800px;
+  width: 100%;
+  max-height: 97vh;
 }
 
 .choixRace,
