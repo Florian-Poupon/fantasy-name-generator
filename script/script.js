@@ -94,7 +94,7 @@ function afficherNom() {
 
     const yourName = document.querySelector(".yourName p");
     if (!yourName) return;
-    yourName.textContent = `Votre nom est "${monNom}" !`;
+    yourName.textContent = `Votre nom est : "${monNom}"`;
   });
 }
 

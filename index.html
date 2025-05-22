@@ -7,38 +7,58 @@
     <script src="script/config.js" defer></script>
     <script src="script/script.js" defer></script>
     <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Metamorphous&display=swap" rel="stylesheet" />
   </head>
   <body>
     <div class="background" id="background"></div>
     <main class="main">
       <!-- Générateur -->
-      <div class="generator">
-        <h1>Générateur de nom fantasy</h1>
-        <!-- Races -->
-        <div classe="choixRace">
-          <h2>Choisissez la race de votre personnage</h2>
-          <div class="raceBtn">
-            <button id="humain" data-race="humain">Humain</button>
-            <button id="elfe" data-race="elfe">Elfe</button>
-            <button id="nain" data-race="nain">Nain</button>
-            <button id="gnome" data-race="gnome">Gnome</button>
-            <button id="orc" data-race="orc">Orc</button>
+      <div>
+        <div class="generator parchment">
+          <h1>Forgeur de noms ancestraux</h1>
+          <p>Choisissez votre race et votre destinée !</p>
+          <hr />
+          <!-- Races -->
+          <div class="choixRace">
+            <h2>Votre origine</h2>
+            <div class="raceBtn">
+              <button id="humain" data-race="humain">
+                <span><img src="images/picto/humain.png" alt="Race Humain" class="picto" /></span>Humain
+              </button>
+              <button id="elfe" data-race="elfe">
+                <span><img src="images/picto/elfe.png" alt="Race Elfe" class="picto" /></span>Elfe
+              </button>
+              <button id="nain" data-race="nain">
+                <span><img src="images/picto/nain.png" alt="Race Nain" class="picto" /></span>Nain
+              </button>
+              <button id="gnome" data-race="gnome">
+                <span><img src="images/picto/gnome.png" alt="Race Gnome" class="picto" /></span>Gnome
+              </button>
+              <button id="orc" data-race="orc">
+                <span><img src="images/picto/orc.png" alt="Race Orc" class="picto" /></span>Orc
+              </button>
+            </div>
           </div>
-        </div>
-        <!-- Genres -->
-        <div class="choixgenre">
-          <h2>Choisissez le genre de votre personnage</h2>
-          <div class="genreBtn">
-            <button id="masculin" data-genre="masculin">Masculin</button>
-            <button id="feminin" data-genre="feminin">Féminin</button>
+          <hr />
+          <!-- Genres -->
+          <div class="choixgenre">
+            <h2>Votre voix intérieure</h2>
+            <div class="genreBtn">
+              <button id="masculin" data-genre="masculin"><span class="genreIcon">♂</span> Masculin</button>
+              <button id="feminin" data-genre="feminin"><span class="genreIcon">♀</span> Féminin</button>
+            </div>
           </div>
-        </div>
-        <hr />
-        <div class="generateBtn">
-          <button>Générez votre nom</button>
-        </div>
-        <div class="yourName">
-          <p></p>
+          <hr />
+          <div class="generateBtn">
+            <div class="yourName">
+              <p></p>
+            </div>
+            <button>Forger votre nom</button>
+          </div>
         </div>
       </div>
       <!-- Fin du Générateur -->
