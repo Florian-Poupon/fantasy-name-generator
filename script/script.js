@@ -106,9 +106,18 @@ function generateName() {
 
 function afficherNom() {
   let generateBtn = document.querySelector(".generateBtn button");
-  generateBtn?.addEventListener("click", () => {
-    let monNom = generateName();
 
+  generateBtn?.addEventListener("click", () => {
+    const raceChoice = document.querySelector(".raceBtn button.active");
+    const genreChoice = document.querySelector(".genreBtn button.active");
+
+    // Vérifie si race et genre sont bien sélectionnés
+    if (!raceChoice || !genreChoice) {
+      // alert("Veuillez sélectionner une race et un genre avant de forger un nom.");
+      return;
+    }
+
+    let monNom = generateName();
     const yourName = document.querySelector(".yourName p");
     if (!yourName) return;
     yourName.textContent = `Votre nom est : "${monNom}"`;
