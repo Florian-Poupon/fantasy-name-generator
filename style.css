@@ -3,7 +3,6 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Cinzel Decorative", serif;
-
   font-size: clamp(0px, 8px, 20px);
   text-align: center;
   text-shadow: 0 0.2rem 0.2rem rgba(36, 0, 0, 0.25);
@@ -110,8 +109,9 @@ p {
   margin-bottom: 2rem;
   font-family: "Merriweather", serif;
 }
-.yourName {
+.yourName p {
   font-size: 3rem;
+  font-family: "Cinzel Decorative", serif;
 }
 
 .picto {
@@ -187,34 +187,54 @@ button:hover {
   .main {
     height: 100%;
     width: 100%;
-    padding: 0;
     margin: 0;
   }
 
   .parchment {
     background: url("images/parchment-texture-mb.png");
     background-position: top;
-    background-size: cover;
+    background-size: contain;
     width: 100%;
     height: 100%;
     padding: 5rem 3rem;
     max-width: none;
     max-height: none;
-    opacity: 1;
+    opacity: 0.9;
   }
   .raceBtn button {
     display: flex;
     gap: 1rem;
-    width: 17rem;
-    height: 17rem;
+    width: 16rem;
+    height: 18rem;
     justify-content: center;
   }
   .genreBtn button {
     display: flex;
     gap: 1rem;
-    width: 27rem;
+    width: 100%;
     height: fit-content;
     justify-content: center;
+  }
+
+  h1 {
+    font-size: 5rem;
+    line-height: 5rem;
+    color: #321d00;
+    margin-bottom: 1rem;
+    font-weight: bold;
+  }
+
+  h2 {
+    font-size: 3.5rem;
+    color: #2a2002;
+    margin-bottom: 2rem;
+  }
+
+  p {
+    font-size: rem;
+    color: #2a0000;
+    margin-bottom: 2rem;
+    font-family: "Merriweather", serif;
   }
 }
 
@@ -232,12 +252,12 @@ button:hover {
   }
 
   .parchment {
-    background: url("images/parchment-texture.png");
+    background: url("images/parchment-texture-mb.png");
     background-position: top;
     background-size: cover;
     width: 100%;
     height: 100%;
-    padding: 10rem 3rem;
+    padding: 8rem 3rem;
     max-width: none;
     max-height: none;
   }

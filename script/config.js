@@ -5,8 +5,8 @@ const listeSexe = ["homme", "femme"];
 
 //noms Humains/Humaines
 
-const prefixesHumainMasculin = ["Alar", "Bren", "Cal", "Dar", "Gar", "Hal", "Jan", "Mal", "Ron", "Tiber"];
-const suffixesHumainMasculin = ["dor", "an", "ius", "ar", "en", "us", "ton", "ald", "eric", "vin"];
+const prefixesHumainMasculin = ["Alär", "Bren", "Cal", "Dar", "Gar", "Hal", "Jan", "Mal", "Ron", "Tiber"];
+const suffixesHumainMasculin = ["dör", "an", "ius", "ar", "en", "us", "ton", "ald", "eric", "vin"];
 
 const prefixesHumainFeminin = ["Elen", "Mara", "Lysa", "Calia", "Jena", "Sora", "Alia", "Mira", "Talia", "Rina"];
 const suffixesHumainFeminin = ["elle", "ana", "ia", "ine", "essa", "aria", "yne", "etta", "ora"];
