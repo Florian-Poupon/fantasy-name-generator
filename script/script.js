@@ -31,9 +31,26 @@ const genreClic = document.querySelectorAll(".genreBtn button");
 
 genreClic.forEach((button) => {
   button.addEventListener("click", () => {
-    let genre = button.getAttribute("data-genre");
-    genreClic.forEach((button) => button.classList.remove("active"));
+    const genre = button.getAttribute("data-genre");
+
+    // activer visuellement le bouton cliqué
+    genreClic.forEach((btn) => btn.classList.remove("active"));
     button.classList.add("active");
+
+    // mettre à jour les pictos selon le genre
+    const racePictos = document.querySelectorAll(".raceBtn button img");
+
+    racePictos.forEach((img) => {
+      const race = img.closest("button")?.getAttribute("data-race");
+      if (!race) return;
+
+      // choisir l'image selon le genre sélectionné
+      if (genre === "masculin") {
+        img.src = `images/picto/${race}.png`;
+      } else {
+        img.src = `images/picto/${race}-feminin.png`;
+      }
+    });
   });
 });
 
