@@ -188,7 +188,10 @@ button:hover {
     height: 100%;
     width: 100%;
     margin: 0;
-    padding: 0.7rem;
+  }
+
+  .main {
+    padding: 1.2rem;
   }
 
   .parchment {
@@ -200,8 +203,13 @@ button:hover {
     padding: 5rem 3rem;
     max-width: none;
     max-height: none;
-    opacity: 0.9;
+    opacity: 0.85;
   }
+
+  .generator {
+    padding: 15% 5%;
+  }
+
   .raceBtn button {
     display: flex;
     flex-direction: column;
@@ -218,6 +226,10 @@ button:hover {
     height: fit-content;
     justify-content: center;
     align-items: center;
+  }
+
+  .generateBtn button {
+    font-size: 2.8rem;
   }
 
   h1 {
