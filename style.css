@@ -155,6 +155,7 @@ button:hover {
 .raceBtn button {
   display: flex;
   flex-direction: column;
+  align-items: center;
   gap: 1rem;
   min-width: 12rem;
 }
