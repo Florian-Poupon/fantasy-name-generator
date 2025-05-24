@@ -136,6 +136,7 @@ button {
   background-color: rgb(63, 40, 4);
   color: #f3ddb6;
   box-shadow: 2rem 1rem 0 0 0 #321d00;
+  justify-content: center;
   padding: 1.7rem 2.7rem;
   border-radius: 0.6rem;
   border: 0.25rem solid black;
