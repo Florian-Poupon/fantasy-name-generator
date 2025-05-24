@@ -10,6 +10,7 @@
 }
 
 body {
+  display: flex;
   background-color: #3f3b2e;
   /* overflow-x: hidden; */
 }
@@ -32,7 +33,12 @@ body {
   opacity: 0;
 }
 
+div {
+  display: flex;
+}
+
 main {
+  display: flex;
   height: 100dvh;
   width: 100vw;
   display: flex;
@@ -43,6 +49,8 @@ main {
 }
 
 .parchment {
+  display: flex;
+
   background: url("images/parchment-texture.png");
   background-size: cover;
   background-repeat: no-repeat;
@@ -67,6 +75,8 @@ main {
 .choixRace,
 .choixgenre,
 .generateBtn {
+  display: flex;
+  flex-direction: column;
   padding: 3rem;
   justify-content: center;
 }
@@ -122,6 +132,7 @@ p {
 /* Bouttons */
 
 button {
+  display: flex;
   background-color: rgb(63, 40, 4);
   color: #f3ddb6;
   box-shadow: 2rem 1rem 0 0 0 #321d00;
@@ -161,6 +172,7 @@ button:hover {
 }
 
 .generateBtn button {
+  display: flex;
   padding: 3rem 7rem;
   background: linear-gradient(to bottom, #704521, #4e2d10);
   color: bisque;
@@ -277,5 +289,10 @@ button:hover {
     padding: 8rem 3rem;
     max-width: none;
     max-height: none;
+  }
+}
+@media (prefers-color-scheme: dark) {
+  html {
+    color-scheme: only light;
   }
 }

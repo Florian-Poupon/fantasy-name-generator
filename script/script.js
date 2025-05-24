@@ -19,7 +19,7 @@ raceClic.forEach((button) => {
     setTimeout(() => {
       background.style.backgroundImage = `url('images/background/background-${race}.png')`;
       background.classList.remove("fade-out");
-    }, 100);
+    }, 0);
 
     raceClic.forEach((button) => button.classList.remove("active"));
     button.classList.add("active");
