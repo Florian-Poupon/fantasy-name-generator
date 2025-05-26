@@ -23,6 +23,7 @@ raceClic.forEach((button) => {
 
     raceClic.forEach((button) => button.classList.remove("active"));
     button.classList.add("active");
+    updateGenerateBtnState();
   });
 });
 
@@ -51,7 +52,27 @@ genreClic.forEach((button) => {
         img.src = `images/picto/${race}-feminin.png`;
       }
     });
+    updateGenerateBtnState();
   });
+});
+
+function updateGenerateBtnState() {
+  const raceChoice = document.querySelector(".raceBtn button.active");
+  const genreChoice = document.querySelector(".genreBtn button.active");
+  const generateBtn = document.querySelector(".generateBtn button");
+  if (!generateBtn) return;
+  if (raceChoice && genreChoice) {
+    generateBtn.disabled = false;
+    generateBtn.classList.remove("disabled");
+  } else {
+    generateBtn.disabled = true;
+    generateBtn.classList.add("disabled");
+  }
+}
+
+// Désactive le bouton au chargement
+document.addEventListener("DOMContentLoaded", () => {
+  updateGenerateBtnState();
 });
 
 // création du nom
@@ -125,3 +146,20 @@ function afficherNom() {
 }
 
 afficherNom();
+
+document.addEventListener("DOMContentLoaded", () => {
+  const musicToggle = document.getElementById("music-toggle");
+  const backgroundMusic = document.getElementById("background-music");
+
+  if (!musicToggle || !backgroundMusic) return;
+
+  musicToggle.addEventListener("click", () => {
+    if (backgroundMusic.paused) {
+      backgroundMusic.play();
+      musicToggle.textContent = "Désactiver Musique";
+    } else {
+      backgroundMusic.pause();
+      musicToggle.textContent = "Activer Musique";
+    }
+  });
+});

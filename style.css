@@ -197,6 +197,38 @@ button:hover {
   box-shadow: 0 10px 1rem rgba(50, 29, 0, 0.197), inset 2px 2px 0 #624b27, inset -2px -2px 0 #624b27, inset -3px -3px 0 #2f1906, inset 3px 3px 0 #2f1906, 0 0 0 0.2rem #9d7a28;
 }
 
+.generateBtn button:disabled,
+.generateBtn button.disabled {
+  background: #afafaf !important;
+  color: #8f8f8f !important;
+  cursor: not-allowed !important;
+  border-color: rgb(73, 73, 73);
+  opacity: 0.7;
+  text-transform: none;
+  box-shadow: 0 10px 1rem rgba(68, 68, 68, 0.197), inset 2px 2px 0 #4e4e4e00, inset -2px -2px 0 #666666, inset -3px -3px 0 #6a6a6a, inset 3px 3px 0 #747474;
+  scale: 1;
+}
+
+/* bouton musique */
+
+.music-toggle {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #704521;
+  color: bisque;
+  padding: 1rem 2rem;
+  border-radius: 0.5rem;
+  border: none;
+  font-size: 2rem;
+  cursor: pointer;
+  box-shadow: 0 0px 1rem rgba(50, 29, 0, 0.478);
+}
+
+.music-toggle:hover {
+  background-color: #552a03;
+}
+
 @media (max-width: 800px) {
   html {
     font-size: clamp(8px, 1.4vw, 20px);
@@ -277,7 +309,7 @@ button:hover {
 
 @media (max-height: 780px) {
   html {
-    font-size: clamp(8px, 1vw, 20px);
+    font-size: clamp(7px, 1vw, 20px);
   }
 
   body,
